@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bite Toothpaste Bits</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav id="navbar"
+        class="navbar navbar-expand-md position-fixed w-100 border-1 border-top border-bottom border-black">
+        <div class="container-fluid justify-content-between">
+            <div class="me-auto">
+                <button id="navbar-toggler" class="navbar-toggler border-0" type="button">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bite</a>
+            </div>
+            <div class="collapse navbar-collapse flex-grow-0 me-auto align-items-center" id="navbarContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="shop-dropdown-toggle" href="#shop-dropdown">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">Our Impact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="shop-dropdown" class="shop-dropdown position-absolute bg-white w-100 d-none">
+                <div class="row flex-column flex-md-row">
+                    <div class="col-md-1 text-md-center order-0">
+                        <a href="#">Shop All <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                    <div class="col-md-3 order-2 order-md-2">
+                        <h5>ORAL CARE</h5>
+                        <ul class="d-none d-md-block">
+
+                            <li><a href="#">Toothpaste Bits Fluoride-Free</a></li>
+                            <li><a href="#">Toothpaste Bits with Fluoride</a></li>
+                            <li><a href="#">Mouthwash Bits</a></li>
+                            <li><a href="#">Whitening Gel</a></li>
+                            <li><a href="#">Floss</a></li>
+                            <li><a href="#">Toothbrush</a></li>
+                            <li><a href="#">Tongue Scraper</a></li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col-md-2 order-3 order-md-3">
+                        <h5>BODY CARE</h5>
+                        <ul class="d-none d-md-block">
+                            <li>
+                                <a href="">Deodorant</a>
+                            </li>
+                            <li>
+                                <a href="">Body Balm</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-2 order-4 order-md-3">
+                        <h5>SETS</h5>
+                        <ul class="d-none d-md-block">
+
+                            <li><a href="#">
+                                    Daily Habits Kit
+                                </a></li>
+                            <li><a href="#">
+
+                                    Clean Essentials Duo
+                                </a></li>
+                            <li><a href="#">
+
+                                    Everyday Whitening System
+                                </a></li>
+                            <li><a href="#">
+
+                                    Best of Bite
+                                </a></li>
+                            <li><a href="#">
+                                    Travel Kit
+                                </a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-4">
+                        <h5>OUR BEST SELLERS</h5>
+                        <div class="d-flex gap-2">
+                            <div class="d-flex flex-column justify-content-between">
+                                <img src="./assets/best1.webp" class="img-fluid border border-black" alt="">
+                                <a class="mt-3" href="#">Shop Toothpaste Bits<i class="bi bi-arrow-right"></i></a>
+                            </div>
+                            <div class="d-flex flex-column justify-content-between">
+                                <img src="./assets/best2.webp" class="img-fluid border border-black" alt="">
+                                <a href="#" class="mt-3">Shop Deodorant<i class="bi bi-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 d-md-none order-5">
+                        <a href="#">About Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logos">
+                <a href="" class="p-2"><i class="bi bi-person"></i></a>
+                <a class="p-2" data-bs-toggle="offcanvas" href="#yourBag" role="button"
+                    aria-controls="offcanvasExample">
+                    <i class="bi bi-bag"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--Your Bag -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="yourBag" aria-labelledby="yourBag">
+        <div class="offcanvas-header d-block border-bottom border-black">
+            <div class="d-flex justify-content-between">
+                <h5 class="offcanvas-title" id="yourBag">Your Bag</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <p>You are $32 away from Free Shipping</p>
+        </div>
+        <div class="offcanvas-body p-0 overflow-hidden position-relative text-center">
+            <div id="trending" class="trending p-4 overflow-auto">
+                <p>OOPS. YOUR BAG IS EMPTY</p>
+                <h4>Here's what's trending:</h4>
+                <div class="trending-item mb-3 d-flex justify-content-center align-items-center border border-black">
+                    <div class="img-container">
+                        <img src="./assets/best1.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-start p-3">
+                        <h5>Toothpaste Bits Fluoride - Free</h5>
+                        <p>Our toothpaste alternative, made without harsh chemicals, plastics or fluoride.</p>
+                        <a href="#" class="text-decoration-underline">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="trending-item mb-3 d-flex justify-content-center align-items-center border border-black">
+                    <div class="img-container">
+                        <img src="./assets/best1.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-start p-3">
+                        <h5>Toothpaste Bits Fluoride - Free</h5>
+                        <p>Our toothpaste alternative, made without harsh chemicals, plastics or fluoride.</p>
+                        <a href="#" class="text-decoration-underline">Shop Now</a>
+                    </div>
+                </div>
+
+                <div class="trending-item mb-3 d-flex justify-content-center align-items-center border border-black">
+                    <div class="img-container">
+                        <img src="./assets/best1.webp" class="img-fluid" alt="">
+                    </div>
+                    <div class="text-start p-3">
+                        <h5>Toothpaste Bits Fluoride - Free</h5>
+                        <p>Our toothpaste alternative, made without harsh chemicals, plastics or fluoride.</p>
+                        <a href="#" class="text-decoration-underline">Shop Now</a>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div
+                class="add-suggestion  d-flex flex-column justify-content-between position-absolute bottom-0 start-0 z-2">
+                <h5 class="mt-3">WHY NOT ADD?</h5>
+                <div class="row d-flex justify-content-center g-3 p-3">
+                    <div class="col-3 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="./assets/add-suggestion1.webp" class="img-fluid" alt="">
+                            <p class="mb-3">Bamboo Toothbrush Subscription</p>
+                        </div>
+                        <a href="#" class="add-to-cart btn rounded-0 w-100">Add</a>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="./assets/add-suggestion2.webp" class="img-fluid" alt="">
+                            <p class="mb-3">Bamboo Toothbrush</p>
+                        </div>
+                        <a href="#" class="add-to-cart btn rounded-0 w-100">Add</a>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="./assets/add-suggestion3.webp" class="img-fluid" alt="">
+                            <p class="mb-3">Body Balm Kit</p>
+                        </div>
+                        <a href="#" class="add-to-cart btn rounded-0 w-100">Add</a>
+                    </div>
+                    <div class="col-3 d-flex flex-column justify-content-between">
+                        <div>
+                            <img src="./assets/add-suggestion4.webp" class="img-fluid" alt="">
+                            <p class="mb-3">The Daily Habits Kit</p>
+                        </div>
+                        <a href="#" class="add-to-cart btn rounded-0 w-100">Add</a>
+                    </div>
+                </div>
+                <a href="#" class="btn shop-now rounded-0 p-3 w-100">SHOP ALL PRODUCTS</a>
+            </div>
+        </div>
+    </div>
+
+
+    <main>
+
+        <!-- Hero -->
+        <div class="container p-0" id="hero">
+            <div class="img-container d-flex align-items-center justify-content-center justify-content-lg-start p-4">
+                <div class="content d-flex flex-column justify-content-center align-items-center text-center">
+                    <h2>It's time to brush better.</h2>
+                    <p>Clean up your routine with Toothpaste Bits. No plastic, no harsh chemicals – just a better way to
+                        brush your teeth.</p>
+                    <a href="#" class="shop-now btn rounded-0 border-0 px-4 py-2 mt-4">SHOP NOW</a>
+                </div>
+            </div>
+            <div id="as-seen"
+                class="d-flex align-items-center justify-content-between p-3 border-1 border-bottom border-black">
+                <div class="me-3 d-flex align-items-center">
+                    <p class="mb-0">AS SEEN IN</p>
+                </div>
+                <div class="as-seen-carousel  d-flex justify-content-between align-items-center">
+                    <img src="./assets/forbes.png" alt="">
+                    <img src="./assets/oprahmag.png" alt="">
+                    <img src="./assets/cosmopolitan.png" alt="">
+                    <img src="./assets/womenshealth.png" alt="">
+                    <img src="./assets/vogue.png" alt="">
+                    <img src="./assets/goop.png" alt="">
+                    <img src="./assets/elle.png" alt="">
+                    <img src="./assets/people.png" alt="">
+                </div>
+
+            </div>
+        </div>
+
+        <section id="how-to">
+            <div class="section-header p-4">
+                <h2>How to Use</h2>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-4 how-to-step">
+                        <div class="img-holder">
+                            <img src="./assets/howto1.webp" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex caption mt-4">
+                            <p
+                                class="step-no border border-2 border-black rounded-circle d-flex justify-content-center align-items-center mt-2">
+                                1</p>
+                            <div class="step-text mb-4">
+                                <p class="mb-0">Grab a Toothpaste Bit</p>
+                                <p>A single bit is all you need each time.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 how-to-step">
+                        <div class="img-holder">
+                            <img src="./assets/howto2.webp" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex caption mt-4">
+                            <p
+                                class="step-no border border-2 border-black rounded-circle d-flex justify-content-center align-items-center mt-2">
+                                2</p>
+                            <div class="step-text mb-4">
+                                <p class="mb-0">Chew your Bit</p>
+                                <p>A soft paste will form in your mouth</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 how-to-step">
+                        <div class="img-holder">
+                            <img src="./assets/howto3.webp" class="img-fluid" alt="">
+                        </div>
+                        <div class="d-flex caption mt-4">
+                            <p
+                                class="step-no border border-2 border-black rounded-circle d-flex justify-content-center align-items-center mt-2">
+                                3</p>
+                            <div class="step-text mb-4">
+                                <p class="mb-0">Brush with a wet toothbrush</p>
+                                <p>It'll foam up, just like regular toothpaste.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn shop-now rounded-0 border-0 w-50 mt-4">
+                        Shop Now
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="reviews">
+            <div class="section-header">
+                <h2>21,000+ Reviews For A Reason</h2>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div id="reviewCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="review-item m-auto flex-md-row d-md-flex border border-white border-1 p-0">
+                                    <div
+                                        class="d-flex flex-column align-items-stretch justify-content-between w-75 p-4">
+                                        <p class="review-text mb-0">Best toothpaste I’ve ever used!</p>
+                                        <div class="rating">
+                                            <p class="review-author mb-0">BRITT W.</p>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="img-container w-50">
+                                        <img src="./assets/review1.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review-item m-auto flex-md-row d-md-flex border border-white border-1 p-0">
+                                    <div
+                                        class="d-flex flex-column align-items-stretch justify-content-between w-75 p-4">
+                                        <p class="review-text mb-0">I’ve tried a few other brands of toothpaste tablets
+                                            and these bits are by far the best. They foam up like regular toothpaste and
+                                            have a great flavor.</p>
+                                        <div class="rating">
+                                            <p class="review-author mb-0">CHRISSY B.</p>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="img-container w-50">
+                                        <img src="./assets/review2.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="review-item m-auto flex-md-row d-md-flex border border-white border-1 p-0">
+                                    <div
+                                        class="d-flex flex-column align-items-stretch justify-content-between w-75 p-4">
+                                        <p class="review-text mb-0">I love the sustainable packaging and my teeth have
+                                            gotten whiter since using this toothpaste. Easy to travel with!</p>
+                                        <div class="rating">
+                                            <p class="review-author mb-0">LUCY R.</p>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                        </div>
+                                    </div>
+                                    <div class="img-container w-50">
+                                        <img src="./assets/review3.webp" class="img-fluid" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <a href="#" class="read-all btn rounded-0 w-50 mt-4">READ ALL REVIEWS</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="shop">
+            <div class="section-header">
+                <h2>Shop By Category</h2>
+            </div>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="shop-item col-md-6 col-lg-3">
+                        <div class="img-container position-relative">
+                            <p class="position-absolute">TOOTHPASTE BITS</p>
+                            <img src="./assets/shop1.jpg" class="img-fluid" alt="">
+                            <a href="#" class="btn rounded-0 position-absolute w-100 text-center p-2">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="shop-item col-md-6 col-lg-3">
+                        <div class="img-container position-relative">
+                            <p class="position-absolute text-white">ORAL CARE</p>
+                            <img src="./assets/shop2.jpg" class="img-fluid" alt="">
+                            <a href="#" class="btn rounded-0 position-absolute w-100 text-center p-2">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="shop-item col-md-6 col-lg-3">
+                        <div class="img-container position-relative">
+                            <p class="position-absolute">SETS</p>
+                            <img src="./assets/shop3.jpg" class="img-fluid" alt="">
+                            <a href="#" class="btn rounded-0 position-absolute w-100 text-center p-2">SHOP NOW</a>
+                        </div>
+                    </div>
+                    <div class="shop-item col-md-6 col-lg-3">
+                        <div class="img-container position-relative">
+                            <p class="position-absolute">BODY CARE</p>
+                            <img src="./assets/shop4.jpg" class="img-fluid" alt="">
+                            <a href="#" class="btn rounded-0 position-absolute w-100 text-center p-2">SHOP NOW</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bits-better">
+            <div class="section-header">
+                <h2>Why Bits Are Better</h2>
+            </div>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-lg-2 col-6 order-1 order-lg-0">
+                        <div class="better-item text-center">
+                            <i class="bi bi-bag"></i>
+                            <h5>PERFECTLY PORTIONED</h5>
+                            <p class="d-none d-xl-block">Stop wasting money by using more toothpaste than you need.</p>
+                        </div>
+                        <div class="better-item text-center">
+                            <i class="bi bi-star"></i>
+                            <h5>BETTER-FOR-YOU FORMULATIONS</h5>
+                            <p class="d-none d-xl-block">A dry tablet means we can use less-harmful ingredients and
+                                still protect your teeth.</p>
+                        </div>
+                        <div class="better-item text-center">
+                            <i class="bi bi-droplet-half"></i>
+                            <h5>SINK-FRIENDLY</h5>
+                            <p class="d-none d-xl-block">Our tablets leave less mess in your sink because no glycerine -
+                                what makes most
+                                toothpaste, paste - means no sticky goop.</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-lg-8 order-0 order-lg-1">
+                        <img src="./assets/bitepack.png" class="img-fluid" alt="">
+                    </div>
+
+                    <div class="col-lg-2 col-6 order-1 order-lg-2">
+                        <div class="better-item text-center">
+                            <i class="bi bi-suitcase"></i>
+                            <h5>SUITCASE-SAFE</h5>
+                            <p class="d-none d-xl-block">No more toothpaste explosions in your bag. Just throw a few
+                                Bits in your pack and you’re
+                                good to go</p>
+                        </div>
+                        <div class="better-item text-center">
+                            <i class="bi bi-globe-americas"></i>
+                            <h5>EARTH-FRIENDLY</h5>
+                            <p class="d-none d-xl-block">Infinitely refillable with no plastic toothpaste tubes, our
+                                Bits are better for our earth
+                                and oceans.</p>
+                        </div>
+
+                        <div class="better-item text-center">
+                            <i class="bi bi-slash-circle"></i>
+                            <h5>STOPS THE SPREAD OF BACTERIA</h5>
+                            <p class="d-none d-xl-block">The top of a toothpaste tube can transfer bacteria from your
+                                partners brush to your
+                                mouth. Our Bits can stop the spread.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="best-sellers">
+            <div class="section-header">
+                <h2>Shop Best Sellers</h2>
+            </div>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bestseller border border-1 border-black">
+                            <div
+                                class="img-container position-relative d-flex flex-column justify-content-between h-100">
+                                <p class="item-name p-3">TOOTHPASTE BITS FLUORIDE - FREE</p>
+                                <img src="./assets/best1.webp" class="img-fluid" alt="">
+                                <div class="purchase-popup position-absolute p-1">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="flavors d-flex gap-2">
+                                            <button class="mint"></button>
+                                            <button class="charcoal"></button>
+                                            <button class="berry"></button>
+                                        </div>
+                                        <p>Mint</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="purchase-options">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="subscribe">Subscribe and Save</label>
+                                        </div>
+                                        <p class="offer p-2">Save 33%</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+
+                                    <div class="d-flex justify-content-between align-items-center px-3 py-1">
+                                        <div class="purchase-options d-flex align-items-center">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="otp">One-Time Purchase</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a href="#" class="btn add-to-bag rounded-0 w-100 text-center p-2">ADD TO BAG</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bestseller border border-1 border-black">
+                            <div
+                                class="img-container position-relative d-flex flex-column justify-content-between h-100">
+                                <p class="item-name p-3">TOOTHPASTE BITS WITH FLUORIDE</p>
+                                <img src="./assets/best2.webp" class="img-fluid" alt="">
+                                <div class="purchase-popup position-absolute p-1">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="flavors d-flex gap-2">
+                                            <button class="mint"></button>
+                                            <button class="charcoal"></button>
+                                            <button class="berry"></button>
+                                        </div>
+                                        <p>Mint</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="purchase-options">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="subscribe">Subscribe and Save</label>
+                                        </div>
+                                        <p class="offer p-2">Save 33%</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+
+                                    <div class="d-flex justify-content-between align-items-center px-3 py-1">
+                                        <div class="purchase-options d-flex align-items-center">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="otp">One-Time Purchase</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a href="#" class="btn add-to-bag rounded-0 w-100 text-center p-2">ADD TO BAG</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bestseller border border-1 border-black">
+                            <div
+                                class="img-container position-relative d-flex flex-column justify-content-between h-100">
+                                <p class="item-name p-3">DEODORANT SET</p>
+                                <img src="./assets/best3.webp" class="img-fluid" alt="">
+                                <div class="purchase-popup position-absolute p-1">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="flavors d-flex gap-2">
+                                            <button class="mint"></button>
+                                            <button class="charcoal"></button>
+                                            <button class="berry"></button>
+                                        </div>
+                                        <p>Mint</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="purchase-options">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="subscribe">Subscribe and Save</label>
+                                        </div>
+                                        <p class="offer p-2">Save 33%</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+
+                                    <div class="d-flex justify-content-between align-items-center px-3 py-1">
+                                        <div class="purchase-options d-flex align-items-center">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="otp">One-Time Purchase</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a href="#" class="btn add-to-bag rounded-0 w-100 text-center p-2">ADD TO BAG</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="bestseller  border border-1 border-black">
+                            <div
+                                class="img-container position-relative d-flex flex-column justify-content-between h-100">
+                                <p class="item-name p-3">MOUTHWASH BITS</p>
+                                <img src="./assets/best4.webp" class="img-fluid" alt="">
+                                <div class="purchase-popup position-absolute p-1">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="flavors d-flex gap-2">
+                                            <button class="mint"></button>
+                                            <button class="charcoal"></button>
+                                            <button class="berry"></button>
+                                        </div>
+                                        <p>Mint</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+                                    <div class="d-flex align-items-center justify-content-between px-3 py-1">
+                                        <div class="purchase-options">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="subscribe">Subscribe and Save</label>
+                                        </div>
+                                        <p class="offer p-2">Save 33%</p>
+                                    </div>
+                                    <hr class="m-2 border border-black">
+
+                                    <div class="d-flex justify-content-between align-items-center px-3 py-1">
+                                        <div class="purchase-options d-flex align-items-center">
+                                            <input type="radio" name="purchase" class="me-2">
+                                            <label for="otp">One-Time Purchase</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <a href="#" class="btn add-to-bag rounded-0 w-100 text-center p-2">ADD TO BAG</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+                <div class="row d-flex justify-content-center align-items-center">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner d-flex align-items-center">
+                            <div class="carousel-item active">
+                                <div class="col border border-1 border-black p-5">
+                                    <h2>"Best Whitening Toothpaste Tablets"</h2>
+                                    <img src="./assets/elle.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col border border-1 border-black p-5">
+                                    <h2>"Give love to your pearly whites"</h2>
+                                    <img src="./assets/goop.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col border border-1 border-black p-5">
+                                    <h2>"These have changed my life."</h2>
+                                    <img src="./assets/womenshealth.png" alt="">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col border border-1 border-black p-5">
+                                    <h2>"Essentials that get the job done with super-efficient results."</h2>
+                                    <img src="./assets/forbes.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faqs">
+            <div class="section-header">
+                <h2>FAQs</h2>
+            </div>
+
+            <div class="container p-0">
+                <div class="row p-0">
+
+                    <div class="accordion accordion-flush" id="faq-accordion">
+
+                        <div class="accordion-item py-2 border-top border-black">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-1" aria-expanded="true" aria-controls="faq-1">
+                                    Are Toothpaste Bits good for sensitive teeth?
+                                </button>
+                            </h2>
+                            <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+
+                                    Yes, our Bits are safe for sensitive teeth. We use Nano-hydroxyapatite in our
+                                    Fluoride-Free formula, a mineral that's been proven to strengthen and remineralize
+                                    enamel and help fight sensitivity.
+
+                                    Read the nHAP Study here and read more information about it here.
+
+                                    We also recommend talking to your dentist about Nano-hydroxyapatite or when making
+                                    any changes to your oral care routine.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item py-2 border-top border-black ">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-2" aria-expanded="false" aria-controls="faq-2">
+                                    How do subscriptions work?
+                                </button>
+                            </h2>
+                            <div id="faq-2" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+
+                                    With subscriptions, we send you all 4 months of Toothpaste Bits at once in our
+                                    refillable glass jar for $32. Shipments after that will be sent every 4 months for
+                                    $32 after your initial purchase, so you don't have to worry about running out of
+                                    Bits. Those orders will come in our compostable refill pouches that are meant to be
+                                    transferred into your glass jar as soon as you receive them.
+
+                                    Our refill pouch will disintegrate in home compost within 12-16 weeks. Or if you
+                                    don't have a home compost, they can be dropped in the compost bin in a number of
+                                    stores—Starbucks and Whole Foods are the most common.
+
+                                    We will send you an email reminder before your order is processed so you can cancel,
+                                    postpone or even change the flavor of your upcoming Bits before they ship. You can
+                                    always update the frequency or flavor of your upcoming Bits by logging into your
+                                    account and making changes there.
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item py-2 border-top border-black">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-3" aria-expanded="false" aria-controls="faq-3">
+                                    Can I purchase just the refill pouches first?
+                                </button>
+                            </h2>
+
+                            <div id="faq-3" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+
+                                    Unfortunately, we do not sell refill pouches on their own. However we do offer a 4
+                                    month subscription – it costs $32 which breaks down to only $8 per month.
+
+                                    The Bits come in a 4oz glass jar in the first shipment and then in compostable
+                                    refill pouches after that, as our tablets are sensitive to humidity and heat. We
+                                    recommend transferring the refill to the jar as soon as it is delivered to keep the
+                                    integrity of the Bits.
+
+                                    Being as eco-friendly as possible is super important to us, but there are a few
+                                    things that are equally important, such as the safety of our customers (and their
+                                    pets!), which is why we send the first round of Bits in a glass jar with a label
+                                    that has the full ingredient list, and a warning to keep away from pets. Xylitol is
+                                    great for teeth, but not great for pups!
+
+                                    We suggest using the 1oz small bottles that you already have for travel to keep
+                                    extra Bits in your bag or for a guest bathroom.
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="accordion-item py-2 border-top border-black">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-4" aria-expanded="false" aria-controls="faq-4">
+                                    What is the shelf life?
+                                </button>
+                            </h2>
+
+                            <div id="faq-4" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+
+                                    With proper storage in a cool and dry place our nHap Bits have a shelf life of 2
+                                    years and our Fluoride Bits have a shelf life of 1 1/2 years from the manufacturing
+                                    date (MFT).
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-top border-black">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#faq-5" aria-expanded="false" aria-controls="faq-5">
+                                    How do I use Toothpaste Bits?
+                                </button>
+                            </h2>
+
+                            <div id="faq-5" class="accordion-collapse collapse" data-bs-parent="#faq-accordion">
+                                <div class="accordion-body">
+                                    It’s easy:
+                                    <ol>
+                                        <li>Put a perfectly portioned Bit into your mouth.</li>
+                                        <li>Chew the Bit gently until it forms a soft powder.</li>
+                                        <li>Brush with a wet toothbrush for 2 minutes, it will foam up - just like what
+                                            you're used to.</li>
+                                        <li>Spit, smile and repeat twice a day to make your dentist proud and our Earth
+                                            happy.</li>
+
+                                    </ol>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 border-end border-white newsletter">
+                    <h4>STAY IN THE KNOW</h4>
+                    <p>Sign Up for 10% Off your first order.</p>
+                    <input type="text" name="email" id="email" placeholder="Enter Email Address"
+                        class="w-75 p-3 my-2 bg-primary border-0 border-bottom">
+                    <button class="border-0 px-3 mt-1 m-0 bg-primary text-white fw-bold"
+                        type="submit">Subscribe</button>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <h4>SHOP</h4>
+                            <ul>
+                                <li><a href="">All Products</a></li>
+                                <li><a href="">Oral Care</a></li>
+                                <li><a href="">Body</a></li>
+                                <li><a href="">Sets</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>LEARN</h4>
+                            <ul>
+                                <li><a href="">Ingredients</a></li>
+                                <li><a href="">Sustainability</a></li>
+                                <li><a href="">About Us</a></li>
+                                <li><a href="">Store Locator</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>HELP</h4>
+                            <ul>
+                                <li><a href="">Account</a></li>
+                                <li><a href="">Wholesale</a></li>
+                                <li><a href="">Affiliate Program</a></li>
+                                <li><a href="">FAQs</a></li>
+                                <li><a href="">Sitemap</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>FOLLOW</h4>
+                            <ul>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Twitter</a></li>
+                                <li><a href="">TikTok</a></li>
+                                <li><a href="">Facebook</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-12 copyright">
+                            <p>© 2025 Bite. All Rights Reserved. </p>
+                            <div class="d-flex gap-3">
+                                <a href="">Privacy Policy</a>
+                                <a href="">Terms of Service</a>
+                                <a href="">Shipping Policy</a>
+                                <a href="">hello@toothpastebits.com</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+
+</html>

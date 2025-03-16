@@ -1,0 +1,327 @@
+@font-face {
+    font-family: 'DM Sans';
+    src: url("./assets/fonts/DMSans.ttf");
+}
+
+@font-face {
+    font-family: 'DM Sans Italic';
+    src: url("./assets/fonts/DMSans-Italic.ttf");
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h3,
+h5,
+p {
+    margin: 0;
+    line-height: 1;
+}
+
+.container {
+    background-color: rgb(248, 248, 248);
+    font-family: 'DM Sans';
+    font-weight: 500;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas:
+        "upper-left upper-left main1 main1 main1 main1 right right"
+        "upper-left upper-left main1 main1 main1 main1 right right"
+        "upper-left upper-left main2 main2 main3 main3 right right"
+        "lower-left lower-left main2 main2 main3 main3 right right"
+        "lower-left lower-left bottom1 bottom1 bottom2 bottom2 bottom2 bottom2"
+        "lower-left lower-left bottom1 bottom1 bottom2 bottom2 bottom2 bottom2"
+    ;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1000px;
+}
+
+.container div {
+    background-color: #7632be;
+    border-radius: 5px;
+    padding: 1rem;
+    text-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container div.item1 {
+    grid-area: upper-left;
+    background-color: #fff5cb;
+}
+
+.item1 h3 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.item1 span {
+    color: #7632be
+}
+
+.item1 img {
+    display: block;
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+.container div.item2 {
+    grid-area: main1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.item2 h3 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.item2 h5 {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.item2 span {
+    color: #fff200e0;
+}
+
+.item2 img {
+    width: 30%;
+    padding: 10px;
+}
+
+.container div.item3 {
+    grid-area: right;
+    overflow: hidden;
+    background-color: #e6daff;
+}
+
+.item3 h3 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.item3 h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.item3 img {
+    height: 70%;
+    width: fit-content;
+    transform: translateX(5%);
+}
+
+.container div.item4 {
+    grid-area: main2;
+    background-color: white;
+    overflow: hidden;
+}
+
+.item4 img {
+    width: 110%;
+    transform: translateX(10%);
+    margin-bottom: 20px;
+}
+
+.item4 h3 {
+    font-weight: 500;
+    font-size: 1.8rem;
+}
+
+.container div.item5 {
+    grid-area: main3;
+    background-color: #fdcf52;
+    overflow: hidden;
+    position: relative;
+}
+
+.item5 h3 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    position: absolute;
+    top: 15px;
+}
+
+.item5 img {
+    position: absolute;
+    bottom: -64px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+
+.container div.item6 {
+    grid-area: lower-left;
+    background-color: #fdcf52;
+}
+
+.item6 h3 {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.item6 img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.container div.item7 {
+    grid-area: bottom1;
+    background-color: white;
+}
+
+.item7 h3 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.item7 h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+    margin: 10px;
+}
+
+.item7 img {
+    width: 10rem;
+}
+
+.container div.item8 {
+    grid-area: bottom2;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.item8 img {
+    width: 50%;
+    padding: 10px;
+}
+
+.item8 h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas:
+            "main1 main1"
+            "main2 main2"
+            "main3 main3"
+            "right right"
+            "right right"
+            "bottom2 bottom2"
+            "bottom1 bottom1"
+            "upper-left upper-left"
+            "lower-left lower-left"
+        ;
+        justify-content: center;
+        gap: 2rem;
+        margin: 1rem;
+        max-width: 100%;
+    }
+
+    .item1 h3 {
+        font-size: 4rem;
+
+    }
+
+    .item1 img {
+        width: 55%;
+        margin-top: 20px;
+    }
+
+    .item2 img {
+        width: 80%;
+    }
+
+    .item2 h5 {
+        font-size: 1.5rem;
+    }
+
+    .item3 {
+        text-align: center;
+    }
+
+    .item3 h3 {
+        font-size: 3rem;
+    }
+
+    .item3 h5 {
+        font-size: 2rem;
+    }
+
+    .item3 img {
+        width: 100%;
+        height: fit-content;
+        transform: none
+    }
+
+    .item5 h3 {
+        font-size: 3rem;
+    }
+
+    .item5 img {
+        left: 50%;
+        width: 90%;
+        transform: translateX(-50%);
+
+    }
+
+    .item6 h3 {
+        font-size: 3rem;
+    }
+
+    .item6 img {
+        width: 70%;
+    }
+
+    .item7 h3 {
+        font-size: 5rem;
+    }
+
+    .item7 h5 {
+        font-size: 2rem;
+    }
+
+    .item7 img {
+        width: 80%;
+    }
+
+    .item8 {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .item8 h3 {
+        font-size: 3rem;
+    }
+
+    .item8 img {
+        width: 80%;
+    }
+}

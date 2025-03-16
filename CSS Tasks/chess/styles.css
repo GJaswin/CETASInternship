@@ -1,0 +1,50 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 60px;
+    height: 60px;
+    background-color: antiquewhite;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col img {
+    width: 100%;
+}
+
+.row:nth-child(even) .col:nth-child(even) {
+    background-color: brown;
+}
+
+.row:nth-child(odd)>.col:nth-child(odd) {
+    background-color: brown;
+
+}
+
+.row:nth-child(2) .col {
+    background-image: url("/images/pawn-w.png");
+    background-position: center;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+}
+
+.row:nth-child(7) .col {
+    background-image: url("/images/pawn-b.png");
+    background-position: center;
+    background-clip: padding-box;
+    background-repeat: no-repeat;
+}

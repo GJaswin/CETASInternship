@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Handling</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <div class="container">
+        <form id="applnForm">
+            <div id="editing-alert">
+                Editing: User
+            </div>
+            <div class="personal-info">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" required>
+                <label for="dob">Date of Birth</label>
+                <input type="date" name="dob" id="dob" required>
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender" required>
+                    <option value="M">Male</option>
+                    <option value="F">Female</option>
+                </select>
+            </div>
+
+
+            <div class="contact-info">
+                <label for="phone">Phone Number</label>
+                <input type="number" name="phone" id="phone" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+            <div class="work-info">
+                <label for="workexp">Work Experience (Years)</label>
+                <input type="range" name="workexp" id="workexp" min="3" max="25" step="1"
+                    class="slider" oninput="showWorkExp()">
+                <p id="workexp-val"></p>
+
+
+                <h2>Work Preferences</h2>
+                <div class="workprefs">
+                    <input type="checkbox" name="work1" value="frontend">
+                    <label for="work1">Front End Developer</label>
+                    <input type="checkbox" name="work2" value="backend">
+                    <label for="work2">Back End Developer</label>
+                    <input type="checkbox" name="work3" value="fullstack">
+                    <label for="work3">Full Stack Developer</label>
+                </div>
+
+                <label for="portfolio">Link to Portfolio</label>
+                <input type="url" name="portfolio" id="portfolio">
+            </div>
+            <div class="form-buttons">
+                <button class="submit" id="submit">Submit</button>
+                <button class="submit" id="edit" disabled>Edit</button>
+            </div>
+            <div class="edit-status" id="edit-status">
+                Edited
+            </div>
+        </form>
+
+    </div>
+    <div class="container">
+        <table id="details">
+            <thead>
+                <tr>
+                    <th>S. No</th>
+                    <th>Name</th>
+                    <th>D.O.B</th>
+                    <th>Gender</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Work Experience</th>
+                    <th>Work Preferences</th>
+                    <th>Portfolio</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<script src="index.js"></script>
+
+</html>

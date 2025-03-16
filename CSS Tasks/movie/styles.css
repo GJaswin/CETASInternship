@@ -1,0 +1,222 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #e4e4e4;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.container {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 500px;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movie-details {
+    position: relative;
+    max-height: 300px;
+
+}
+
+.movie-details .overlay {
+    position: absolute;
+    color: white;
+    background-color: #5a5f7a75;
+    top: 0;
+    left: 0;
+    bottom: 4px;
+    right: 0;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.overlay i {
+    font-size: 32px;
+}
+
+.overlay .desc {
+    position: absolute;
+    bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay .desc .title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.overlay .desc .location {
+    font-size: 16px;
+}
+
+.overlay .desc i {
+    font-size: 16px;
+}
+
+.movie-img {
+    overflow: hidden;
+    max-height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movie-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+}
+
+.legend span {
+    margin: 10px;
+    color: #5a5f7a;
+}
+
+.legend i {
+    font-size: 24px;
+}
+
+.seats {
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+}
+
+.seats .rownums {
+    margin: 0;
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #5a5f7a;
+    font-size: 14px;
+}
+
+.rownums p {
+    margin-bottom: 17px;
+}
+
+
+.seats>div {
+    margin: 0 30px;
+}
+
+.seats i {
+    padding: 3px;
+    font-size: 32px;
+}
+
+.available {
+    color: #5a5f7a;
+}
+
+.selected {
+    color: #ff008c;
+}
+
+.booked {
+    color: #dddddd;
+}
+
+.rows>div {
+    text-wrap: nowrap;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+}
+
+.screen p {
+    color: #5a5f7a;
+    font-weight: bold;
+}
+
+.screen img {
+    width: 80%;
+    filter: blur(1px);
+}
+
+.summary {
+    background-color: #ff008c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+
+.summary .details {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    font-weight: bold;
+}
+
+.summary .details>div {
+    margin-right: 16px;
+    padding: 10px;
+}
+
+.summary .details>div:first-child {
+    background-color: #e80984;
+}
+
+/* .summary .details>p:nth-child(1) {
+    grid-area: date-text;
+}
+
+.summary .details>p:nth-child(2) {
+    grid-area: date;
+}
+
+.summary .details>p:nth-child(3) {
+    grid-area: tickets-text;
+}
+
+.summary .details>p:nth-child(4) {
+    grid-area: tickets;
+}
+
+.summary .details>p:nth-child(5) {
+    grid-area: total-text;
+}
+
+.summary .details>p:nth-child(6) {
+    grid-area: total;
+} */
+
+.next {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 20px;
+    margin: 10px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 1px #9c1a61;
+}

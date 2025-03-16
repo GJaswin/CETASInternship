@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="p-3">
+        <nav class="d-flex justify-content-between align-items-center">
+            <div class="logo d-flex justify-content-center align-items-center gap-2">
+                <img src="./assets/logo.jpg" class="img-fluid" alt="logo">
+                <p>Karyaone</p> <br>
+            </div>
+            <div class="navlinks d-none d-lg-flex gap-4">
+                <a href="#"><i class="ri-apps-2-line"></i> Dashboard</a>
+                <a href="#"><i class="ri-group-line"></i>Employees</a>
+                <a href="#"><i class="ri-time-line"></i> Time Management</a>
+                <a href="#"><i class="ri-money-dollar-circle-line"></i> Payroll</a>
+                <a href="#"><i class="ri-checkbox-line"></i> Approval</a>
+            </div>
+            <div class="profile d-flex gap-3 align-items-center justify-content-center">
+                <i class="ri-notification-3-line"></i>
+                <img src="./assets/user.jpg" alt="profile">
+                <a href="#" class="align-items-center d-none d-md-flex">Jaswin Kumar <i
+                        class="ri-arrow-down-s-line"></i></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="p-3">
+            <div class="outer-container">
+                <div class="row justify-content-between">
+                    <div class="col-4 text-white">
+                        <h2 class="fw-bold">Attendance</h2>
+                        <p><i class="ri-file-chart-line"></i> Company Name</p>
+                    </div>
+                    <div class="col-8">
+                        <div class="float-start float-lg-end actions d-none d-md-flex gap-4">
+                            <a href="#"><i class="ri-file-chart-line"></i> Report</a>
+                            <a href="#"><i class="ri-time-line"></i> Absence Deduct Time Off</a>
+                            <a href="#"><i class="ri-map-pin-line"></i> Location</a>
+                            <a href="#"><i class="ri-settings-3-line"></i> Settings</a>
+                        </div>
+                        <div class="d-flex float-end d-md-none actions">
+                            <a href="#" class="settings-toggle"><i class="ri-settings-3-line"></i> View Options</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex gap-4 mt-4 tabs">
+                    <a href="#">Overview</a>
+                    <a href="#">Activity</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="details">
+            <div class="container-xxl p-3">
+                <div class="row p-3 stats-card">
+                    <div class="d-flex col-lg-4  align-items-center gap-3">
+                        <div class="overflow-visible">
+                            <i class="ri-megaphone-fill"></i>
+                        </div>
+                        <div>
+                            <h4 class="fw-bold">Today, 5 February 2025</h4>
+                            <p>This shows daily data in real-time</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-8 d-flex flex-row mt-3 mt-lg-0 justify-content-end overflow-hidden">
+                        <div class="d-flex align-items-center gap-4 p-2 overflow-x-auto">
+                            <div class="stats">
+                                <h6>Total Employees</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="stat-num">345</p>
+                                    <i class="ri-arrow-right-down-box-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="stats">
+                                <h6>On Time</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>290</p>
+                                    <i class="ri-arrow-right-up-box-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="stats">
+                                <h6>Late In</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>36</p>
+                                    <i class="ri-arrow-right-down-box-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="stats">
+                                <h6>Absent</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>5</p>
+                                    <i class="ri-arrow-right-up-box-fill"></i>
+                                </div>
+                            </div>
+
+                            <div class="stats">
+                                <h6>Time Off</h6>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p>5</p>
+                                    <i class="ri-arrow-right-up-box-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="data">
+            <div class="container-xxl p-3">
+                <div class="row gap-2">
+                    <div class="d-flex flex-wrap p-3 justify-content-between align-items-center border-bottom">
+                        <div>
+                            <h4>Employee Attendance</h4>
+                            <p>Keep track of employee attendance on a daily basis.</p>
+                        </div>
+                        <div class="d-flex gap-3 table-options flex-wrap justify-content-start justify-content-md-end">
+                            <a href="#"><i class="ri-calendar-2-line"></i> 5 February 2025</a>
+                            <div class="d-none d-md-flex justify-content-center align-items-center gap-3">
+                                <a href="#"><i class="ri-import-line"></i> Import</a>
+                                <a href="#"><i class="ri-export-line"></i> Export</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-block d-lg-flex gap-3 p-3 filters align-items-center">
+                        <div class="d-flex gap-3 w-100 table-options flex-wrap flex-md-nowrap">
+                            <a href="#">All Employees</a>
+                            <a href="#">IT Division</a>
+                            <a href="#">Content Division</a>
+                            <a href="#">Marketing</a>
+                            <a href="#">Finance</a>
+                        </div>
+                        <div
+                            class="d-flex flex-wrap flex-md-nowrap gap-3 justify-content-start justify-content-lg-end mt-3 mt-lg-0 table-options">
+                            <input type="text" placeholder="Search" name="search">
+                            <a href="#" class="text-nowrap"><i class="ri-filter-3-line"></i> Filters</a>
+                        </div>
+                    </div>
+                    <div class="data-table p-3 table-responsive d-none d-md-block">
+                        <table id="data-table" class="table">
+                            <thead>
+                                <tr>
+                                    <td>Employee ID</td>
+                                    <td>Employee</td>
+                                    <td>Date</td>
+                                    <td>Shift</td>
+                                    <td>Status</td>
+                                    <td>Clock In</td>
+                                    <td>Clock Out</td>
+                                    <td>Over Time</td>
+                                    <td>Coordinate</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+              
+                            </tbody>
+                        </table>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <p>Page 1 of 300</p>
+                            <div class="d-flex gap-3 table-options">
+                                <a href="#">Previous</a>
+                                <a href="#">Next</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="data-mobile" class="data-mobile p-3 d-block d-md-none">
+         
+                     
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="data-popup position-fixed">
+            <div class="data-card p-3 mb-3">
+                <p class="user-id px-3">IT001</p>
+                <div class="d-flex p-3 user-profile gap-2 align-items-center">
+                    <div class="img-container overflow-hidden">
+                        <img src="./assets/user.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="user-desig">
+                        <h3>Zaim Maulana</h3>
+                        <p>UI / UX Designer</p>
+                    </div>
+                </div>
+                <div class="details p-3">
+                    <div>
+                        <h4>Date</h4>
+                        <p>5 February 2025</p>
+                    </div>
+                    <div>
+                        <h4>Shift</h4>
+                        <p>Office Hour</p>
+                    </div>
+                    <div>
+                        <h4>Status</h4>
+                        <p>Work from Office</p>
+                    </div>
+                    <div>
+                        <h4>Clock In</h4>
+                        <p>08:00</p>
+                        <h4>Clock Out</h4>
+                        <p>17:00</p>
+                        <h4>Overtime</h4>
+                        <p>00:00</p>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button class="close" onclick="closePopup()"><i class="ri-close-line"></i> Close</>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-popup position-fixed">
+            <div class="data-card p-3 mb-3">
+                <h3>Settings</h3>
+                <div class="actions">
+                    <a href="#"><i class="ri-file-chart-line"></i> Report</a>
+                    <a href="#"><i class="ri-time-line"></i> Absence Deduct Time Off</a>
+                    <a href="#"><i class="ri-map-pin-line"></i> Location</a>
+                    <a href="#"><i class="ri-settings-3-line"></i> Settings</a>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button class="close" onclick="closePopup()"><i class="ri-close-line"></i> Close</>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+    <div class="body-overlay"></div>
+</body>
+<script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="index.js"></script>
+
+</html>

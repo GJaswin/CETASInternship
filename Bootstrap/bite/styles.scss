@@ -1,0 +1,560 @@
+$primary-color: #000000;
+$secondary-color: #72f2c7;
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+nav {
+
+    background-color: transparent;
+    z-index: 99;
+
+    .navbar-brand {
+        font-family: 'Old Standard TT';
+        font-weight: bold;
+        font-size: 2.5rem;
+        vertical-align: middle;
+    }
+
+    .logos {
+        top: 2px;
+
+        a {
+            font-size: 2rem;
+            color: black
+        }
+    }
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+}
+
+.section-header {
+    h2 {
+        font-size: 3rem;
+        font-weight: 600;
+        font-family: 'Old Standard TT';
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
+
+#yourBag {
+    background-color: #f4f4f4;
+    p {
+        font-size: 0.8rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    .trending-item {
+        h5 {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        a {
+            color: $primary-color;
+            font-size: 0.9rem;
+        }
+
+        .img-container {
+            max-width: 100px;
+        }
+    }
+
+    .cart-item {
+        h4 {
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: $primary-color;
+            font-size: 0.9rem;
+        }
+
+        .item-qty {
+            background-color: white;
+            border: 1px solid grey;
+
+            p {
+                font-size: 1rem;
+            }
+
+            .add,
+            .remove {
+                font-size: 1.5rem;
+                padding: 0 1rem;
+            }
+        }
+
+
+        .price {
+            font-size: 1.2rem;
+        }
+
+        .price-strikethrough {
+            text-decoration: dashed;
+            color: grey;
+        }
+
+        .img-container {
+            max-width: 100px;
+        }
+    }
+
+    .trending {
+        height: calc(100% - 20.4rem);
+    }
+
+    .add-suggestion {
+        height: 20.4rem;
+        background-color: #f4f4f4;
+
+        .col-3 {
+            * {
+                margin: 2px;
+            }
+
+            p {
+
+                line-height: 1;
+            }
+
+            a {
+                background-color: $primary-color;
+                color: white;
+
+                &:hover {
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+
+    .shop-now {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+    }
+}
+
+
+#shop-dropdown {
+    top: 4.8rem;
+    left: 0;
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    .row>div {
+        border: 1px solid black;
+        padding: 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        margin-top: 2rem;
+    }
+
+    a {
+        color: $primary-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        & {
+            height: 100vh;
+        }
+
+    }
+}
+
+
+#hero {
+    max-width: 100%;
+
+    .img-container {
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 90vh;
+
+        .content {
+            color: black;
+            max-width: 40%;
+
+            h2 {
+                font-family: 'Old Standard TT';
+                font-size: 2.5rem;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+        }
+
+        @media only screen and (min-width: 992px) {
+            .content {
+                color: white;
+
+                h2 {
+                    font-size: 5rem;
+                }
+
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+
+        .shop-now {
+            background-color: $primary-color;
+            color: white;
+            width: 80%;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+        }
+    }
+
+}
+
+#as-seen {
+    overflow: auto;
+
+    p {
+        text-wrap: nowrap;
+    }
+
+    .as-seen-carousel {
+        img {
+            max-width: 120px;
+            height: fit-content;
+            padding: 10px;
+            margin: 0px 20px;
+        }
+    }
+}
+
+#how-to {
+    .how-to-step {
+        .step-no {
+            width: 1.5rem;
+            height: 1.5rem;
+            padding: 14px;
+            margin-right: 1.5rem;
+        }
+
+        .step-text p {
+            font-size: 1rem;
+
+            &:first-child {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .shop-now {
+        background-color: $primary-color;
+        color: white;
+
+        &:hover {
+            background-color: $secondary-color;
+            color: $primary-color;
+        }
+    }
+}
+
+
+
+
+
+#reviews {
+    background-color: $primary-color;
+    color: white;
+
+    .review-text {
+        font-size: 1.2rem;
+    }
+
+    .review-item {
+        max-width: 800px;
+    }
+
+    .read-all {
+        background-color: $secondary-color;
+        color: $primary-color;
+
+        &:hover {
+            background-color: white;
+        }
+    }
+
+    .rating i {
+        color: $secondary-color
+    }
+}
+
+.shop-item {
+    .img-container {
+        overflow: hidden;
+
+        img {
+            transition: 0.3s all ease-in-out;
+        }
+
+        p {
+            top: 1rem;
+            left: 1rem;
+            max-width: 150px;
+            font-size: 1.3rem;
+            z-index: 2;
+        }
+
+        a {
+            bottom: -50px;
+            opacity: 0;
+            left: 0;
+            background-color: $primary-color;
+            color: white;
+            transition: 0.3s all ease-in-out;
+            position: relative;
+            z-index: 7;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+
+            a {
+                bottom: 0;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.better-item {
+    margin: 1rem;
+
+    p {
+
+        font-size: 0.8rem;
+    }
+}
+
+.bestseller {
+    height: 100%;
+
+    .img-container {
+        overflow: hidden;
+
+        .item-name {
+            font-size: 1.5rem;
+        }
+
+        img {
+            transition: 0.3s all ease-in-out;
+        }
+
+
+        a {
+            background-color: $primary-color;
+            color: white;
+            transition: 0.3s all ease-in-out;
+
+            &:hover {
+                background-color: $secondary-color;
+                color: $primary-color;
+            }
+        }
+
+        &:hover {
+            .purchase-popup {
+                opacity: 1;
+                bottom: 42px;
+            }
+
+            .add-to-bag {
+                background-color: white;
+                color: $primary-color;
+                position: relative;
+                z-index: 2;
+            }
+        }
+
+    }
+
+    .purchase-popup {
+        bottom: 20px;
+        left: 50%;
+        opacity: 0;
+        transform: translateX(-50%);
+        backdrop-filter: blur(2px);
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.895);
+        transition: 0.3s all ease-in-out;
+        z-index: 1;
+    }
+
+    .flavors {
+        button {
+            width: 36px;
+            height: 36px;
+            border: none;
+
+
+            &:focus {
+                border: 1px solid black;
+            }
+
+        }
+
+        .mint {
+            background-color: $secondary-color;
+        }
+
+        .charcoal {
+            background-color: gray;
+        }
+
+        .berry {
+            background-color: #ff9d9d;
+        }
+    }
+
+    .offer {
+        font-size: 1rem;
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+#testimonials {
+    div {
+        text-align: center;
+    }
+
+    img {
+        max-width: 120px;
+    }
+}
+
+#faqs {
+
+    .accordion-header button {
+        font-size: 1.3rem;
+    }
+
+    .accordion-button {
+        &:focus {
+            outline: none;
+            border: none;
+            background: white;
+            box-shadow: none;
+        }
+
+        &:not(.collapsed) {
+            background-color: white;
+            color: $primary-color;
+            border-bottom: none;
+        }
+    }
+}
+
+footer {
+    background-color: $primary-color;
+    color: white;
+    padding: 1rem;
+
+    .newsletter {
+        p {
+            font-size: 1.5rem;
+        }
+
+        input::placeholder {
+            color: white;
+        }
+    }
+
+    h4 {
+        font-size: 1rem;
+        margin-bottom: 24px;
+    }
+
+    ul {
+        padding: 0;
+
+        li a {
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .copyright {
+        font-size: 12px;
+
+        a {
+
+            color: white;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.navbar-toggler {
+    &:active, &:focus {
+        border: none;
+        outline: none;
+        box-shadow: none;
+    }
+}

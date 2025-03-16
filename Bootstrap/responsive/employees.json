@@ -1,0 +1,32 @@
+{
+    "IT001": {
+        "name": "Zaim Maulana",
+        "desig": "UI / UX Designer",
+        "shift": "Office Hour",
+        "work_status": "Work from Office",
+        "date": "5 February 2025",
+        "clock_in": "08:00",
+        "clock_out": "17:00",
+        "overtime": "00:00"
+    },
+    "CD002": {
+        "name": "Revaldo",
+        "desig": "Content Creator",
+        "shift": "Office Hour",
+        "work_status": "Work from Home",
+        "date": "6 February 2025",
+        "clock_in": "09:00",
+        "clock_out": "16:00",
+        "overtime": "01:00"
+    },
+    "FN003": {
+        "name": "Alfina",
+        "desig": "Finance",
+        "shift": "Office Hour",
+        "work_status": "Work from Office",
+        "date": "4 February 2025",
+        "clock_in": "07:00",
+        "clock_out": "14:00",
+        "overtime": "02:00"
+    }
+}

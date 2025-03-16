@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="check" class="switch">
+        <input type="checkbox" name="check" id="check">
+        <span class="slider">
+            <span class="icon material-symbols-outlined">
+                check
+            </span>
+        </span>
+    </label>
+
+    <script>
+
+        var checkboxes = document.getElementsByTagName("input");
+        for (let i of checkboxes) {
+            if (i.getAttribute("type") == "checkbox") {
+                console.log(i);
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

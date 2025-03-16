@@ -1,0 +1,200 @@
+[
+    {
+        "name": "Jaswin",
+        "dept": "CSE",
+        "year": "III",
+        "cgpa": "8",
+        "percentage": 80,
+        "project": 65,
+        "attendance": 85
+    },
+    {
+        "name": "Rahul",
+        "dept": "MECH",
+        "year": "II",
+        "cgpa": "9",
+        "percentage": 93,
+        "project": 85,
+        "attendance": 89
+    },
+    {
+        "name": "Amit",
+        "dept": "CSE",
+        "year": "III",
+        "cgpa": "8.7",
+        "percentage": 91,
+        "project": 88,
+        "attendance": 85
+    },
+    {
+        "name": "Sneha",
+        "dept": "ECE",
+        "year": "IV",
+        "cgpa": "8.9",
+        "percentage": 90,
+        "project": 87,
+        "attendance": 88
+    },
+    {
+        "name": "Vikram",
+        "dept": "MECH",
+        "year": "II",
+        "cgpa": "8.5",
+        "percentage": 89,
+        "project": 82,
+        "attendance": 90
+    },
+    {
+        "name": "Ananya",
+        "dept": "EEE",
+        "year": "I",
+        "cgpa": "9.2",
+        "percentage": 94,
+        "project": 90,
+        "attendance": 92
+    },
+    {
+        "name": "Rohan",
+        "dept": "CSE",
+        "year": "IV",
+        "cgpa": "8.4",
+        "percentage": 88,
+        "project": 85,
+        "attendance": 87
+    },
+    {
+        "name": "Priya",
+        "dept": "CSE",
+        "year": "III",
+        "cgpa": "9.0",
+        "percentage": 92,
+        "project": 89,
+        "attendance": 90
+    },
+    {
+        "name": "Aditya",
+        "dept": "MECH",
+        "year": "I",
+        "cgpa": "7.8",
+        "percentage": 85,
+        "project": 80,
+        "attendance": 84
+    },
+    {
+        "name": "Megha",
+        "dept": "CIVIL",
+        "year": "II",
+        "cgpa": "8.1",
+        "percentage": 86,
+        "project": 83,
+        "attendance": 86
+    },
+    {
+        "name": "Karan",
+        "dept": "ECE",
+        "year": "III",
+        "cgpa": "8.6",
+        "percentage": 89,
+        "project": 86,
+        "attendance": 85
+    },
+    {
+        "name": "Simran",
+        "dept": "EEE",
+        "year": "IV",
+        "cgpa": "9.1",
+        "percentage": 93,
+        "project": 91,
+        "attendance": 92
+    },
+    {
+        "name": "Aryan",
+        "dept": "CSE",
+        "year": "II",
+        "cgpa": "8.2",
+        "percentage": 87,
+        "project": 84,
+        "attendance": 88
+    },
+    {
+        "name": "Neha",
+        "dept": "CSE",
+        "year": "I",
+        "cgpa": "9.3",
+        "percentage": 95,
+        "project": 92,
+        "attendance": 93
+    },
+    {
+        "name": "Varun",
+        "dept": "MECH",
+        "year": "III",
+        "cgpa": "7.9",
+        "percentage": 84,
+        "project": 79,
+        "attendance": 83
+    },
+    {
+        "name": "Sakshi",
+        "dept": "CIVIL",
+        "year": "IV",
+        "cgpa": "8.5",
+        "percentage": 88,
+        "project": 86,
+        "attendance": 87
+    },
+    {
+        "name": "Yash",
+        "dept": "ECE",
+        "year": "I",
+        "cgpa": "9.0",
+        "percentage": 92,
+        "project": 89,
+        "attendance": 90
+    },
+    {
+        "name": "Riya",
+        "dept": "EEE",
+        "year": "III",
+        "cgpa": "8.8",
+        "percentage": 90,
+        "project": 87,
+        "attendance": 89
+    },
+    {
+        "name": "Harsh",
+        "dept": "CSE",
+        "year": "IV",
+        "cgpa": "8.3",
+        "percentage": 87,
+        "project": 85,
+        "attendance": 86
+    },
+    {
+        "name": "Tanisha",
+        "dept": "CSE",
+        "year": "II",
+        "cgpa": "9.4",
+        "percentage": 96,
+        "project": 93,
+        "attendance": 94
+    },
+    {
+        "name": "Manish",
+        "dept": "MECH",
+        "year": "IV",
+        "cgpa": "7.7",
+        "percentage": 83,
+        "project": 78,
+        "attendance": 82
+    },
+    {
+        "name": "Aditi",
+        "dept": "CIVIL",
+        "year": "I",
+        "cgpa": "8.9",
+        "percentage": 91,
+        "project": 88,
+        "attendance": 90
+    }
+]

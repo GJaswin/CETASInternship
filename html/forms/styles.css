@@ -1,0 +1,57 @@
+body {
+    padding: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+fieldset {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+fieldset * {
+    display: block;
+}
+
+.degree {
+    display: block;
+}
+
+.degree div {
+    display: flex;
+}
+
+button {
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(158, 71, 239);
+}
+
+label {
+    margin-top: 10px
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #9d9d9d;
+    border-radius: 5px;
+}
+
+input[type=range] {
+    padding: 0px;
+}
+
+select {
+    padding: 10px;
+}
+
+.checkboxes label {
+    display: flex;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body class="bg-violet-50">
+    <div class="outer-container">
+
+        <div class="flex flex-col md:flex-row justify-center items-center h-screen w-screen relative">
+            <div
+                class="flex flex-col w-100 md:w-80 h-[500px] justify-between items-center bg-linear-to-b from-purple-500 to-violet-700 text-white  rounded-2xl text-center p-8 z-[2]">
+                <h4 class="font-bold text-violet-200 text-xl">Your Result</h4>
+                <div
+                    class="p-3 rounded-full h-50 w-50 flex justify-center items-center flex-col bg-linear-to-b from-violet-700 to-violet-500/10">
+                    <p class="text-6xl font-bold">76</p>
+                    <p class="text-violet-200">of 100</p>
+                </div>
+                <div>
+                    <h3 class="font-bold text-4xl">Great</h3>
+                    <p class="text-violet-200">You scored higher than 65% of the people who have taken these tests</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col h-[500px] w-100 justify-evenly bg-white rounded-2xl md:start-[-50px] top-[-20px] md:top-0 p-8 relative">
+                <h4 class="font-bold text-2xl relative start-[0px] md:start-[50px]">Summary</h4>
+                <div class="flex flex-col gap-5 relative start-[0px] md:start-[25px]  p-8">
+                    <div class="flex justify-between font-bold bg-red-50 p-4 rounded-xl">
+                        <p class="text-red-400"><i class="ri-flashlight-line font-normal"></i> Reaction</p>
+                        <p class="text-gray-400"><span class="text-black">80</span> / 100</p>
+                    </div>
+
+                    <div class="stat bg-yellow-50">
+                        <p class="text-yellow-400"><i class="ri-brain-line font-normal"></i> Memory</p>
+                        <p class="text-gray-400"><span class="text-black">92</span> / 100</p>
+                    </div>
+                    <div class="stat bg-green-50">
+                        <p class="text-green-500"><i class="ri-message-2-line font-normal"></i> Verbal</p>
+                        <p class="text-gray-400"><span class="text-black">61</span> / 100</p>
+                    </div>
+                    <div class="stat bg-purple-50">
+                        <p class="text-purple-800"><i class="ri-eye-line font-normal"></i> Visual</p>
+                        <p class="text-gray-400"><span class="text-black">73</span> / 100</p>
+                    </div>
+
+                </div>
+
+                <button
+                    class="bg-blue-950 rounded-full text-white p-4 mx-8 font-bold transition-all ease-in-out hover:bg-violet-800 relative start-[0px] md:start-[25px] ">Continue</button>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+<script src="index.js" type="module"></script>
+
+</html>

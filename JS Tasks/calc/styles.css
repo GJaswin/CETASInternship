@@ -1,0 +1,124 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: sans-serif;
+}
+
+#calculator {
+    background-color: #1d2331;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+}
+
+.inputs * {
+    margin: 10px 5px;
+    padding: 20px;
+}
+
+.inputs input {
+    width: 100%; 
+    border-radius: 5px;
+    background-color: #22425c;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+
+}
+
+input[type=number] {
+    appearance: textfield;
+}
+
+.input-op {
+    color: white;
+    font-weight: bold;
+}
+
+#output {
+    padding: 20px;
+    margin: 5px;
+    text-align: right;
+    height: 24px;
+    background-color: #684737;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.keypad {
+    display: flex;
+    justify-content: space-between;
+}
+
+.keypad button {
+    margin: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #22425c;
+    border: 2px solid rgb(67, 151, 214);
+    border-radius: 5px;
+    color: white;
+}
+
+.keypad button:active {
+    background-color: #101f2b;
+}
+
+.operators {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.operators button {
+    background-color: #792222;
+    border: 2px solid #d73939;
+}
+
+.operators button:active {
+    background-color: #651616;
+}
+
+.special-ops {
+    display: flex;
+    flex-direction: column;
+}
+
+.special-ops button {
+    background-color: #1c6348;
+    border: 2px solid #23c884;
+}
+
+.special-ops button:active {
+    background-color: #0f412e;
+}
+
+
+.keypad .nums {
+    display: grid;
+    gap: 10px 30px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.keypad .nums button {
+    width: 95px;
+    height: 95px;
+    font-size: 26px;
+}
+
+.keypad .operators button {
+    display: block;
+}

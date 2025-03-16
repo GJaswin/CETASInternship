@@ -1,0 +1,192 @@
+{
+    "jaswin": {
+        "fname": "Jaswin",
+        "lname": "Kumar",
+        "dob": "2004-08-27",
+        "parentname": "Ramya",
+        "qualification": "Bachelor of Computer Science Engg.",
+        "phone": "9876543210",
+        "address": {
+            "l1": "5, 2nd Street",
+            "l2": "Saibaba Colony",
+            "l3": "Coimbatore",
+            "pincode": "601001"
+        },
+        "shortProfile": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolorem officiis aut sint, maiores repudiandae quia expedita id rem corporis! Quibusdam sint doloremque eius ex molestiae commodi quod repudiandae suscipit laboriosam libero ab, perferendis pariatur distinctio maiores debitis. Et totam ut dignissimos, neque doloremque soluta fugiat? Optio perspiciatis assumenda numquam!",
+        "education": [
+            {
+                "institute": "Government College of Technology",
+                "degree": "BE CSE",
+                "marks": "9"
+            },
+            {
+                "institute": "Stanes AIHS School",
+                "degree": "HSC",
+                "marks": "95%"
+            }
+        ],
+        "skills": [
+            "Front - End",
+            "Graphics Design",
+            "Linux System Administration",
+            "Cybersecurity"
+        ],
+        "certifications": [
+            "NPTEL - Ethical Hacking",
+            "Coursera - Cybersecurity",
+            "NPTEL - Cloud Computing"
+        ]
+    },
+    "aarav": {
+        "fname": "Aarav",
+        "lname": "Sharma",
+        "dob": "2003-12-15",
+        "parentname": "Meera",
+        "qualification": "Bachelor of Information Technology",
+        "phone": "9876543211",
+        "address": {
+            "l1": "12, 4th Avenue",
+            "l2": "Green Park",
+            "l3": "Bangalore",
+            "pincode": "560034"
+        },
+        "shortProfile": "Passionate IT professional with a focus on full-stack development and mobile app design. Skilled in creating user-centric solutions.",
+        "education": [
+            {
+                "institute": "RV College of Engineering",
+                "degree": "B.Tech IT",
+                "marks": "8.7"
+            },
+            {
+                "institute": "National Institute of Technology",
+                "degree": "Diploma IT",
+                "marks": "8.5"
+            }
+        ],
+        "skills": [
+            "Full-Stack Development",
+            "App Development",
+            "Cloud Computing",
+            "Data Analytics"
+        ],
+        "certifications": [
+            "Coursera - Full-Stack Development",
+            "AWS Certified Solutions Architect",
+            "Google Data Analytics"
+        ]
+    },
+    "riya": {
+        "fname": "Riya",
+        "lname": "Gupta",
+        "dob": "2002-05-22",
+        "parentname": "Anjali",
+        "qualification": "Master of Data Science",
+        "phone": "9876543212",
+        "address": {
+            "l1": "33, Lake View Apartments",
+            "l2": "Bandra West",
+            "l3": "Mumbai",
+            "pincode": "400050"
+        },
+        "shortProfile": "Experienced data scientist with expertise in machine learning and predictive analytics. Dedicated to solving complex business challenges.",
+        "education": [
+            {
+                "institute": "Indian Institute of Technology Bombay",
+                "degree": "M.Sc Data Science",
+                "marks": "9.2"
+            },
+            {
+                "institute": "St. Xavier's College",
+                "degree": "B.Sc Statistics",
+                "marks": "8.8"
+            }
+        ],
+        "skills": [
+            "Machine Learning",
+            "Python Programming",
+            "Data Visualization",
+            "Big Data Analytics"
+        ],
+        "certifications": [
+            "IBM Data Science Professional Certificate",
+            "NPTEL - Machine Learning",
+            "Google TensorFlow Developer"
+        ]
+    },
+    "karthik": {
+        "fname": "Karthik",
+        "lname": "Reddy",
+        "dob": "2001-09-10",
+        "parentname": "Suresh",
+        "qualification": "Bachelor of Electrical Engineering",
+        "phone": "9876543213",
+        "address": {
+            "l1": "8, Sunrise Villas",
+            "l2": "Banjara Hills",
+            "l3": "Hyderabad",
+            "pincode": "500034"
+        },
+        "shortProfile": "Electrical engineer with a strong foundation in power systems and renewable energy technologies. Enthusiastic about sustainable solutions.",
+        "education": [
+            {
+                "institute": "Osmania University",
+                "degree": "B.E Electrical",
+                "marks": "8.6"
+            },
+            {
+                "institute": "Sri Chaitanya Junior College",
+                "degree": "Intermediate MPC",
+                "marks": "9.0"
+            }
+        ],
+        "skills": [
+            "Power Systems Design",
+            "Renewable Energy",
+            "Embedded Systems",
+            "Circuit Analysis"
+        ],
+        "certifications": [
+            "NPTEL - Power Systems",
+            "Coursera - Embedded Systems",
+            "Renewable Energy Professional Certification"
+        ]
+    },
+    "meera": {
+        "fname": "Meera",
+        "lname": "Iyer",
+        "dob": "1999-03-14",
+        "parentname": "Lakshmi",
+        "qualification": "Master of Business Administration",
+        "phone": "9876543214",
+        "address": {
+            "l1": "21, Palm Grove",
+            "l2": "Indiranagar",
+            "l3": "Bangalore",
+            "pincode": "560038"
+        },
+        "shortProfile": "MBA graduate specializing in marketing and strategy. Skilled in crafting innovative campaigns and driving business growth.",
+        "education": [
+            {
+                "institute": "Indian Institute of Management Bangalore",
+                "degree": "MBA Marketing",
+                "marks": "9.3"
+            },
+            {
+                "institute": "Mount Carmel College",
+                "degree": "BBA",
+                "marks": "8.9"
+            }
+        ],
+        "skills": [
+            "Marketing Strategy",
+            "Digital Marketing",
+            "Business Analysis",
+            "Content Creation"
+        ],
+        "certifications": [
+            "HubSpot Content Marketing Certification",
+            "Google Ads Certification",
+            "Coursera - Business Strategy"
+        ]
+    }
+}

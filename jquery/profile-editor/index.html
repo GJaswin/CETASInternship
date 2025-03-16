@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Editor</title>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div class="menu-icon">
+            <span>Menu</span>
+            <div>
+                <i class="ri-arrow-right-long-line"></i>
+            </div>
+        </div>
+        <div class="data-control">
+            <button id="prevdata"><i class="ri-arrow-left-s-fill"></i></button>
+            <span id="entrynum">0/0</span>
+            <button id="nextdata"><i class="ri-arrow-right-s-fill"></i></button>
+        </div>
+        <div class="edit">
+            <button>Edit <i class="ri-edit-box-line"></i></button>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="sidebar">
+            <a href="#personal"><i class="ri-user-2-fill"></i> <span>Personal Details</span></a>
+            <a href="#contact"><i class="ri-contacts-book-fill"></i> <span>Contact Details</span></a>
+            <a href="#profile"><i class="ri-profile-fill"></i><span>Short Profile</span></a>
+            <a href="#education"><i class="ri-graduation-cap-fill"></i><span>Education</span></a>
+            <a href="#skills"><i class="ri-bar-chart-fill"></i><span>Skills</span></a>
+            <a href="#certifications"><i class="ri-verified-badge-fill"></i><span>Certifications</span></a>
+        </div>
+
+        <div class="main">
+
+            <div id="personal">
+                <h2>Personal Details</h2>
+                <div class="content">
+                    <div>
+                        <label for="fname">First Name</label>
+                        <input type="text" value="" id="fname" name="fname" readonly>
+                    </div>
+                    <div>
+                        <label for="lname">Last Name</label>
+                        <input type="text" value="" id="lname" name="lname" readonly>
+                    </div>
+                    <div>
+                        <label for="dob">Date of Birth</label>
+                        <input type="date" value="" id="dob" name="dob" readonly>
+                    </div>
+                    <div>
+                        <label for="parentname">Parent's Name</label>
+                        <input type="text" value="" id="parentname" name="parentname" readonly>
+                    </div>
+                    <div class="block">
+                        <label for="qualification">Qualification</label>
+                        <input type="text" value="" id="qualification" name="qualification" readonly>
+                    </div>
+                </div>
+            </div>
+
+            <div id="contact">
+                <h2>Contact Details</h2>
+                <div class="content block">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" value="" id="phone" name="phone" readonly>
+
+                    <label for="address">Address</label>
+                    <input type="text" name="address-l1" id="address-l1" value="" readonly>
+                    <input type="text" name="address-l2" id="address-l2" value="" readonly>
+                    <input type="text" name="address-l3" id="address-l3" value="" readonly>
+                    <label for="pincode">Pin Code</label>
+                    <input type="text" name="pincode" id="pincode" value="" readonly>
+                </div>
+            </div>
+
+            <div id="profile">
+                <h2>Short Profile</h2>
+                <div class="content">
+                    <div class="block">
+                        <textarea name="shortProfile" id="shortProfile" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div id="education">
+                <h2>Education Details</h2>
+                <div class="content">
+                    <table>
+                        <thead>
+                            <th>S. No</th>
+                            <th>Institution</th>
+                            <th>Degree</th>
+                            <th>Marks / Grades</th>
+                        </thead>
+                        <tbody class="details">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div id="skills">
+                <h2>Skills</h2>
+                <div class="content">
+                    <ul id="skill-list">
+                    </ul>
+                </div>
+            </div>
+
+            <div id="certifications">
+                <h2>Certifications</h2>
+                <div class="content">
+                    <ul id="cert-list">
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

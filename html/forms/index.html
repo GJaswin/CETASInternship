@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bio-Data</title>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Account Info</legend>
+            <label for="fname">First Name</label>
+            <input type="text" name="fname" id="fname">
+            <label for="lname">Last Name</label>
+            <input type="text" name="lname" id="lname">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" max="2004-01-15">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" pattern="^[^@]+@[^@]+\.[^@]+$">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+        </fieldset>
+
+        <fieldset>
+            <legend>Education Details</legend>
+            <label for="degree">Degree</label>
+            <div class="degree">
+                <div>
+                    <input type="radio" name="degree" id="be">
+                    <label for="be">B.E</label>
+                </div>
+                <div>
+                    <input type="radio" name="degree" id="btech">
+                    <label for="be">B.Tech</label>
+                </div>
+                <div>
+                    <input type="radio" name="degree" id="me">
+                    <label for="be">M.E</label>
+                </div>
+                <div>
+                    <input type="radio" name="degree" id="phd">
+                    <label for="phd">Ph.D</label>
+                </div>
+            </div>
+
+            <label for="yearofgrad">Year of Graduation</label>
+            <select name="yearofgrad" id="yearofgrad">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+            </select>
+            <label for="proofofstudy">Proof of Study</label>
+            <input type="file" name="proofofstudy" id="proofofstudy" accept=".pdf, .doc, .docx">
+            <label for="college">College</label>
+            <input list="colleges" name="college" id="college">
+            <datalist id="colleges">
+                <option value="GCT"></option>
+                <option value="PSG Tech"></option>
+                <option value="ACTECH"></option>
+                <option value="Anna University"></option>
+                <option value="NIT"></option>
+
+            </datalist>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <label for="workexp">Work Experience (0 - 25 Years)</label>
+            <input type="range" name="workexp" id="workexp" min="0" max="25" step="1">
+            <label for="domains">Areas of Expertise</label>
+            <select name="domains" id="domains" multiple>
+                <option value="Frontend">Front-End</option>
+                <option value="Backend">Back-End</option>
+                <option value="Fullstack">Full-Stack</option>
+                <option value="Cloud">Cloud</option>
+                <option value="Data Science">Data Science</option>
+            </select>
+            <h4>Job Preferences</h4>
+            <div class="checkboxes">
+                <label for="frontend">
+                    <input type="checkbox" id="frontend" name="frontend" value="Frontend Developer">
+                    Front End Developer
+                </label>
+
+                <label for="backend">
+                    <input type="checkbox" id="backend" name="backend" value="Backend Developer">
+                    Back End Developer
+                </label>
+
+                <label for="cloudeng">
+                    <input type="checkbox" id="cloudeng" name="cloudeng" value="Cloud Engineer">
+                    Cloud Engineer
+                </label>
+            </div>
+        </fieldset>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

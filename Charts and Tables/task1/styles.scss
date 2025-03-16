@@ -1,0 +1,126 @@
+$ease: 0.3s all ease-in-out;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+
+
+#sidebar {
+    background-color: #349dee;
+    color: white;
+    height: 100vh;
+    position: fixed;
+    z-index: 2;
+    width: 13rem;
+    top: 0;
+    left: 0;
+
+    .menu-items {
+
+        a {
+            display: block;
+            background-color: #64c9ff;
+            color: white;
+            text-decoration: none;
+            padding: 1rem;
+            margin: 0.6rem;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: $ease;
+            text-align: center;
+
+            &:hover {
+                background-color: #19668f;
+            }
+        }
+
+    }
+}
+
+nav.navbar {
+    background-color: #349dee;
+    position: fixed;
+    width: 100%;
+    padding: 0.5rem;
+    color: white;
+    z-index: 2;
+
+    h3 {
+        font-weight: bold;
+    }
+
+    .menu-button {
+        border: 1px solid #64c9ff;
+        border-radius: 5px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: $ease;
+
+        &:hover {
+            background-color: #64c9ff;
+        }
+    }
+}
+
+main {
+    position: relative;
+    top: 3rem;
+    width: 100%;
+    height: calc(100vh - 4rem);
+    overflow: auto;
+}
+
+.main-offset {
+    left: 13rem;
+    width: calc(100% - 13rem);
+}
+
+.chart {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: 2px solid #cacaca;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: $ease;
+
+    &:hover,
+    &:focus {
+        border: 2px solid #19668f;
+    }
+}
+
+.selection-border {
+
+    border: 2px solid #19668f;
+}
+
+.heading {
+    font-weight: bold;
+}
+
+thead td {
+    background-color: #349dee !important;
+    color: white !important;
+}
+
+.export-buttons {
+    background-color: #349dee !important;
+    border: none !important;
+}
+
+.dt-column-title {
+    font-weight: bold;
+}

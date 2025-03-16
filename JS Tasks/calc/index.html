@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div id="calculator">
+
+            <div class="inputs">
+                <input type="text" name="firstnum" id="firstnum" step="0.01">
+                <p id="input-op" class="input-op">?</p>
+                <input type="text" name="secondnum" id="secondnum">
+            </div>
+            <p id="output" class="output">
+                0
+            </p>
+            <div class="keypad">
+                <div class="nums">
+                    <button id="keyp7" data-val="7">7</button>
+                    <button id="keyp8" data-val="8">8</button>
+                    <button id="keyp9" data-val="9">9</button>
+                    <button id="keyp4" data-val="4">4</button>
+                    <button id="keyp5" data-val="5">5</button>
+                    <button id="keyp6" data-val="6">6</button>
+                    <button id="keyp1" data-val="1">1</button>
+                    <button id="keyp2" data-val="2">2</button>
+                    <button id="keyp3" data-val="3">3</button>
+                    <button id="keypdec" data-val=".">.</button>
+                    <button id="keyp0" data-val="0">0</button>
+                    <button id="clear">C</button>
+                </div>
+                <div style="display: flex;">
+                    <div class="operators">
+                        <button id="opdiv" data-op="/">/</button>
+                        <button id="opmul" data-op="*">x</button>
+                        <button id="opadd" data-op="+">+</button>
+                        <button id="opsub" data-op="-">-</button>
+                        <button id="oppow" data-op="^">^</button>
+                        <button id="opeq">=</button>
+                    </div>
+                    <div class="special-ops">
+                        <button id="opsin" data-op="sin">sin()</button>
+                        <button id="opcos" data-op="cos">cos()</button>
+                        <button id="optan" data-op="tan">tan()</button>
+                        <button id="sqrt" data-op="sqrt">sqrt()</button>
+                        <button id="log" data-op="log">log()</button>
+                        <button id="log10" data-op="log10">log<sub>10</sub>()</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>

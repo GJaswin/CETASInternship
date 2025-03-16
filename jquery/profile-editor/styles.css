@@ -1,0 +1,275 @@
+html {
+    scroll-behavior: smooth;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: antiquewhite;
+}
+
+body * {
+
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+}
+
+header {
+    height: 3rem;
+    background-color: brown;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+
+}
+
+.block,
+.block * {
+    display: block;
+    width: 100%;
+}
+
+.flex,
+.flex * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 0px 10px;
+}
+
+.menu-icon>div {
+    background-color: #d15151;
+    border-radius: 5px;
+    margin: 6px;
+}
+
+.menu-icon i {
+    width: 40px;
+    height: 36px;
+    font-size: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s all ease-in-out;
+    transform: rotate(180deg);
+}
+
+.sidebar {
+    width: 20rem;
+    max-width: 100%;
+    height: 100vh;
+    background-color: brown;
+    border-bottom-right-radius: 10px;
+    overflow-y: scroll;
+    position: fixed;
+    top: 48px;
+    z-index: 1;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #d15151;
+    transition: 0.3s all ease-in-out;
+    color: white;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.sidebar a>i {
+    font-size: 24px;
+    font-weight: normal;
+    border-radius: 50%;
+    display: flex;
+
+}
+
+.sidebar a>span {
+    margin-left: 10px;
+    text-wrap: nowrap;
+}
+
+.sidebar a:hover {
+    background-color: antiquewhite;
+    color: brown;
+}
+
+.main {
+    padding: 20px;
+    overflow-y: auto;
+    max-width: calc(100% - 90px);
+    position: relative;
+    margin-top: 1rem;
+    left: 20rem;
+    width: calc(100% - 20rem);
+}
+
+.main>div h2 {
+    color: brown;
+}
+
+.main>div .content {
+    display: block;
+}
+
+.main>div .content label,
+.main>div .content input,
+.main>div .content textarea {
+    margin: 10px;
+}
+
+.content label {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(63, 12, 106);
+    text-wrap: nowrap;
+}
+
+.content input {
+    text-wrap: nowrap;
+    font-size: 18px;
+}
+
+.content input,
+.content textarea {
+    padding: 10px;
+    background-color: white;
+    border: 2px solid brown;
+    border-radius: 5px;
+    min-height: fit-content;
+}
+
+.content textarea {
+    font-family: sans-serif;
+    resize: none;
+    overflow: auto;
+    min-height: 100px;
+}
+
+.content input:read-only,
+.content textarea:read-only {
+    background-color: antiquewhite;
+    border: none;
+    appearance: none;
+    caret-color: transparent;
+    padding: 10px 0;
+}
+
+.content input:focus-visible,
+.content textarea:focus-visible {
+    outline: none;
+}
+
+#education table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#education table {
+    border: 1px solid brown;
+}
+
+#education table td,
+#education table th {
+    border: 1px solid brown;
+    text-align: center;
+}
+
+#education table td input {
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+}
+
+#skill-list li,
+#skill-list li input,
+#cert-list li,
+#cert-list li input {
+    width: 100%;
+}
+
+.edit {
+    margin-right: 10px;
+}
+
+.edit button {
+    background-color: #06aa4d;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    padding: 4px 16px;
+    transition: 0.3s all ease-in-out;
+}
+
+.edit button:hover {
+    background-color: #d15151!important;
+}
+
+.data-control {
+    display: flex;
+}
+
+.data-control button {
+    background-color: #d15151;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 32px;
+    padding: 0 7px;
+    border-radius: 5px;
+    transition: 0.3s all ease-in-out;
+
+}
+
+.data-control button:hover {
+    background-color: #6606aa;
+}
+
+.data-control #entrynum {
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: 100%;
+    }
+
+    .content input {
+        font-size: 1rem;
+    }
+
+}

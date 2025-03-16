@@ -1,0 +1,10 @@
+student perf metrics using chart
+sidebar
+no of students per dept
+scores, average, etc...
+table using datatables
+progressbars for performance, checkboxes
+export buttons
+searchbox
+pagination
+body alone scrollable
